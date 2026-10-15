@@ -7,7 +7,7 @@ public class MatrixApp {
         System.out.println("== Консольный интерфейс для работы с матрицами комплексных чисел ==");
 
         while (true) {
-            System.out.println("\n-- ВЫБОР ОПЕРАЦИИ --:");
+            System.out.println("\n------- ВЫБОР ОПЕРАЦИИ -------:");
             System.out.println("1. Сложить две матрицы");
             System.out.println("2. Перемножить две матрицы");
             System.out.println("3. Разделить одну матрицу на другую");
@@ -25,7 +25,7 @@ public class MatrixApp {
             try {
                 switch (choice) {
                     case 1 -> { // Сложение
-                        System.out.println("Ввод матрицы А:");
+                        System.out.println("\nВвод матрицы А:");
                         ComplexMatrix a = inputMatrix();
                         System.out.println("Ввод матрицы Б:");
                         ComplexMatrix b = inputMatrix();
@@ -35,7 +35,7 @@ public class MatrixApp {
                         result.print();
                     }
                     case 2 -> { // Умножение
-                        System.out.println("Ввод матрицы А:");
+                        System.out.println("\nВвод матрицы А:");
                         ComplexMatrix a = inputMatrix();
                         System.out.println("Ввод матрицы Б:");
                         ComplexMatrix b = inputMatrix();
@@ -45,7 +45,7 @@ public class MatrixApp {
                         result.print();
                     }
                     case 3 -> { // Деление
-                        System.out.println("Ввод матрицы А (делимое):");
+                        System.out.println("\nВвод матрицы А (делимое):");
                         ComplexMatrix a = inputMatrix();
                         System.out.println("Ввод матрицы Б (делитель):");
                         ComplexMatrix b = inputMatrix();
@@ -55,7 +55,7 @@ public class MatrixApp {
                         result.print();
                     }
                     case 4 -> { // Транспонирование
-                        System.out.println("Ввод матрицы:");
+                        System.out.println("\nВвод матрицы:");
                         ComplexMatrix a = inputMatrix();
 
                         ComplexMatrix result = a.transpose();
@@ -63,7 +63,7 @@ public class MatrixApp {
                         result.print();
                     }
                     case 5 -> { // Определитель
-                        System.out.println("Ввод матрицы:");
+                        System.out.println("\nВвод матрицы:");
                         ComplexMatrix a = inputMatrix();
 
                         ComplexNumber det = a.determinant();
