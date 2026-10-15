@@ -5,6 +5,10 @@ public class ComplexMatrix {
         this.grid = new ComplexNumber[rows][cols];
     }
 
+    public void inputElement(ComplexNumber elem, int row, int col) {
+        this.grid[row][col] = elem;
+    }
+
     public ComplexNumber getElement(int row, int col) {
         return this.grid[row][col];
     }
