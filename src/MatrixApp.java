@@ -83,7 +83,7 @@ public class MatrixApp {
         scanner.close();
     }
 
-
+    // Вспомогательный метод для ввода матрицы
     private static ComplexMatrix inputMatrix() {
         System.out.print("Введите количество строк:    ");
         int rows = scanner.nextInt();
