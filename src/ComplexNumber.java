@@ -18,4 +18,9 @@ public class ComplexNumber {
     public ComplexNumber multiply(ComplexNumber other) {
         return new ComplexNumber(this.real * other.real - this.imaginary * other.imaginary, this.real * other.imaginary + this.imaginary * other.real);
     }
+
+    // Инвертирование
+    public ComplexNumber negate() {
+        return new ComplexNumber(-this.real, -this.imaginary);
+    }
 }
