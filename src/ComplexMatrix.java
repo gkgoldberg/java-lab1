@@ -17,6 +17,29 @@ public class ComplexMatrix {
         return this.grid[0].length;
     }
 
+    public void print() {
+        for (int i = 0; i < this.getRows(); i++) {
+            System.out.print("[ ");
+            for (int j = 0; j < this.getCols(); j++) {
+                ComplexNumber num = this.grid[i][j];
+
+                if (num == null) {
+                    System.out.print("null ");
+                    continue;
+                }
+
+                double r = num.getReal();
+                double im = num.getImaginary();
+
+                if (im >= 0) {
+                    System.out.printf("%.2f + %.2fi\t", r, im);
+                } else {
+                    System.out.printf("%.2f - %.2fi\t", r, Math.abs(im));
+                }
+            }
+            System.out.println(" ]");
+        }
+    }
 
     // СЛОЖЕНИЕ матриц
     public ComplexMatrix add(ComplexMatrix other) {
