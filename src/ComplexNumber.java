@@ -9,6 +9,14 @@ public class ComplexNumber {
         this.imaginary = imaginary;
     }
 
+    public double getReal() {
+        return real;
+    }
+
+    public double getImaginary() {
+        return imaginary;
+    }
+
     // Сложение
     public ComplexNumber add(ComplexNumber other) {
         return new ComplexNumber(this.real + other.real, this.imaginary + other.imaginary);
